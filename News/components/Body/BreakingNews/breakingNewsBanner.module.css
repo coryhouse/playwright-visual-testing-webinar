@@ -1,0 +1,44 @@
+.breakingNewsBanner {
+    width: 100%;
+    background-color: #3fcca6; /* Eye-catching red */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: -10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.breakingNewsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breakingNewsMessage {
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 70vw; /* Prevents the text from overflowing */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0%, 100% {
+        background-color: #3fcca6;
+    }
+    50% {
+        background-color: #00cc96;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .breakingNewsBanner {
+        font-size: 1rem;
+    }
+}

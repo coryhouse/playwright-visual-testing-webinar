@@ -1,0 +1,53 @@
+.inputContainer {
+    margin: 40px 0px;
+    width: 100%;
+}
+
+.inputLabel {
+    display: block;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.inputText {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 8px;
+    box-sizing: border-box;
+}
+
+.inputText:focus {
+    outline: 2px solid #00a399;
+}
+
+.inputSelect {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+}
+.inputSelect:focus {
+	outline: 2px solid #00a399;
+}
+
+.inputCheck {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.fileInput {
+    display: none;
+}
+
+.subMessage {
+    margin: 0px;
+    text-align: left;
+    color: #EF8354;
+    font-weight: bold;
+	font-size: 13px;
+}

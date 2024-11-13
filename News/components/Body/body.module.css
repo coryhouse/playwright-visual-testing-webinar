@@ -1,0 +1,21 @@
+.homepageBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.dateText {
+    position: absolute;
+    top: 6.1vh;
+    right: 2.5vw;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .dateText {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        margin: 10px 10px 0px 10px;
+    }
+}

@@ -1,0 +1,8 @@
+.sampleContainer {
+    background-image: url("/_next/static/media/green-bg.b6058fd6.svg");
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}

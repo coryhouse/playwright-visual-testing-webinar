@@ -1,0 +1,19 @@
+.button {
+    padding: 5px 30px; 
+    border: none; 
+    background-color: #1a3766; 
+    color: white;
+    border-radius: 4px
+}
+
+.button:disabled {
+	font-style: italic;
+	background-color: #ddd !important;
+	color: #aaa;
+	box-shadow: none !important;
+	cursor: not-allowed;
+}
+
+.button:hover {
+    background-color: #3069C5;
+}

@@ -1,0 +1,16 @@
+.listItemWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.listItemImage {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.listItemSummary {
+    font-size: 0.9rem;
+    color: #253544;
+}

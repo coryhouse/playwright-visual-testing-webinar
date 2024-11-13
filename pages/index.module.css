@@ -1,0 +1,61 @@
+.demoAppsContainer {
+    text-align: center;
+    min-height:100vh;
+    padding:5rem 0;
+}
+
+.demoAppsContainer h2 {
+    font-size: 30px;
+}
+
+.appBubblesContainer {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.appBubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    width: 400px;
+    font-size: 25px;
+    background-color: white;
+    box-shadow: 3px 3px 3px #555;
+    transition: .5s;
+    border: 2px solid #157a72;
+    opacity: .85;
+}
+
+.appImage {
+    width: 100%;
+    height: 100%;
+}
+.appImage img {
+    border-radius: 7px 7px 0px 0px;
+    /* border-bottom: 3px solid #ddd; */
+    max-width: 100%;
+    height: auto;
+
+}
+
+.appDesc {
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    border-top: 5px solid #eee;
+}
+
+.appBubble:hover {
+    box-shadow: none;
+    opacity: 1;
+}

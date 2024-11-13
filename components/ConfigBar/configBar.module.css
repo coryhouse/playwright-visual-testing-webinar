@@ -1,0 +1,71 @@
+.configBarContainer {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: .5s;
+}
+
+.configBarContent {
+    width: 500px;
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 10px;
+    border-radius: 7px;
+    min-height: 300px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.configBarHeader p {
+    font-size: 25px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.configBarBody {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 60%;
+}
+
+.collapsedOptions {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 7px;
+    padding: 10px 5px;
+    box-shadow: 2px 2px 5px #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collapsedIcon {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.collapsedIcon:hover {
+    cursor: pointer;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
+}
+
+.goButton {
+    background-color: #49A078;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #888;
+}

@@ -1,0 +1,10 @@
+.scrollableRegion {
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    background-color: transparent;
+    width: 800px;
+    height: 400px;
+    overflow: auto;
+    text-align: justify;
+}

@@ -1,0 +1,24 @@
+.sampleLinkContainer {
+    padding: 10px;
+    background-color: #1a3766;
+    border-radius: 5px;
+    width: 150px;
+    text-align: left;
+    margin-top: -1.5rem;
+}
+
+.sampleLinkContainer:hover {
+    background-color: #20427a;
+    cursor: pointer;
+}
+
+.sampleLinkIcon {
+    margin-top: -1.8rem;
+    margin-bottom: 20px;
+}
+
+.sampleLinkLabel {
+    color: white;
+    font-weight: bold;
+    margin: 10px 0px;
+}

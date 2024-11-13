@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.horizontalLine {
+    width: 100%;
+    height: 1px;
+    background-color:grey;
+    margin: .35vw 0;
+}

@@ -1,0 +1,36 @@
+.articleBody {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2vw 2vw; /* Added padding for a more spacious look */
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.articleHeader, .articleFooter {
+    text-align: center;
+    line-height: 1.4;
+}
+.articleH1 {
+    color: #2c3e50;
+}
+.articleH2 {
+    color: #34495e;
+}
+.articleH3 {
+    color: #253544;
+    font-weight: bold;
+}
+.articleP {
+    margin: 15px 0;
+}
+.articleUl {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+.articleCode {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+}

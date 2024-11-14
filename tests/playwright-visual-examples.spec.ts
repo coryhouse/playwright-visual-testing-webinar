@@ -49,14 +49,17 @@ test.describe("Playwright Visual Test Examples", () => {
     await expect(page).toHaveScreenshot("small-changes.png");
 
     //Uncomment this and run again after commenting out above steps.
-    // await page.goto('https://sandbox.applitools.com/bank');
-    // await page.evaluate(() => {
-    //    let text = document.querySelector('#log-in') as HTMLElement;
-    //    text.innerText = 'Sinn in';
-    //
-    //    let input = document.querySelector('#username') as HTMLElement;
-    //    input.placeholder = 'Enter your userna';
-    // });
-    // await expect(page).toHaveScreenshot('small-changes.png', {threshold: 0.10, timeout: 30000});
+    //  await page.goto("https://sandbox.applitools.com/bank");
+    //  await page.evaluate(() => {
+    //    let text = document.querySelector("#log-in") as HTMLElement;
+    //    text.innerText = "Sinn in";
+
+    //    let input = document.querySelector("#username") as HTMLInputElement;
+    //    input.placeholder = "Enter your userna";
+    //  });
+    //  await expect(page).toHaveScreenshot("small-changes.png", {
+    //    threshold: 0.1,
+    //    timeout: 30000,
+    //  });
   });
 });

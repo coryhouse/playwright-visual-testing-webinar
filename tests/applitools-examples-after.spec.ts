@@ -29,7 +29,7 @@ test.describe("Applitools Examples", () => {
       let text = document.querySelector("#log-in") as HTMLElement;
       text.innerText = "Sinn in";
 
-      let input = document.querySelector("#username") as HTMLElement;
+      let input = document.querySelector("#username") as HTMLInputElement;
       input.placeholder = "Enter your userna";
     });
 

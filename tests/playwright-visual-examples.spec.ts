@@ -10,6 +10,7 @@ test.describe("Playwright Visual Test Examples", () => {
     //Create PW baseline then comment out.
     await page.goto("https://sandbox.applitools.com/bank");
     await expect(page).toHaveScreenshot("displacements.png");
+
     //Uncomment this and run again after commenting out above steps.
     //  await page.goto(
     //    "https://sandbox.applitools.com/bank?ignoreDisplacements=true"

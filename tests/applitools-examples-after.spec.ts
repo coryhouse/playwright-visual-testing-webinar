@@ -35,7 +35,7 @@ test.describe("Applitools Examples", () => {
 
     await eyes.check("small visual changes test after");
 
-    //Users can use a layoutRegion(s) or ignoreRegion(s) if these visual diffs are intential.
+    //Users can use a layoutRegion(s) or ignoreRegion(s) if these visual diffs are intentional.
     // await eyes.check('small visual changes test after', {layoutRegions: ['#log-in', '#username']});
   });
 });

@@ -1,5 +1,12 @@
 # Next.js example
 
+## Script:
+
+1. `npx playwright test playwright-visual-examples.spec.ts` Show constraints.
+2. `npx playwright test applitools-examples.spec.ts` to generate baseline.
+3. Uncomment new stuff in applitools examples
+4. `npx playwright test applitools-examples.spec.ts` to show how Applitools handles it.
+
 ## How to use
 
 Download the example [or clone the repo](https://github.com/mui/material-ui):

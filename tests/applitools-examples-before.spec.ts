@@ -1,4 +1,4 @@
-import { test, expect } from "@applitools/eyes-playwright/fixture";
+import { test } from "@applitools/eyes-playwright/fixture";
 
 // NOTE: Change the reporter to reporter: "@applitools/eyes-playwright/reporter" in playwright.config.ts'
 // Run this spec first to generate the baselines in Applitools. Run the after spec to create the visual diffs.

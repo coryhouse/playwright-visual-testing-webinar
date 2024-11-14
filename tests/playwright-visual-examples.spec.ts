@@ -22,17 +22,25 @@ test.describe("Playwright Visual Test Examples", () => {
     //Create PW baseline then comment out.
     await page.goto("https://sandbox.applitools.com/bank/dashboard");
     await expect(page).toHaveScreenshot("dynamic.png");
-
     //Uncomment this and run again after commenting out above steps.
-    // await page.goto('https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true');
-    // await page.evaluate(() => {
-    //          let elem = document.querySelector('.dashboardNav_logoLabel__iQ5Pd') as HTMLElement;
-    //          elem.style.backgroundColor = 'red'
-    //          elem.style.color = 'black'
-    //    let text = document.querySelector('.dashboardOverview_hideMobile__L9uZF > div:nth-child(1)') as HTMLElement;
-    //    text.innerText = 'Total Debt';
-    // });
-    // await expect(page).toHaveScreenshot('dynamic.png', {threshold: 0.10, timeout: 30000});
+    //  await page.goto(
+    //    "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"
+    //  );
+    //  await page.evaluate(() => {
+    //    let elem = document.querySelector(
+    //      ".dashboardNav_logoLabel__iQ5Pd"
+    //    ) as HTMLElement;
+    //    elem.style.backgroundColor = "red";
+    //    elem.style.color = "black";
+    //    let text = document.querySelector(
+    //      ".dashboardOverview_hideMobile__L9uZF > div:nth-child(1)"
+    //    ) as HTMLElement;
+    //    text.innerText = "Total Debt";
+    //  });
+    //  await expect(page).toHaveScreenshot("dynamic.png", {
+    //    threshold: 0.1,
+    //    timeout: 30000,
+    //  });
   });
 
   test("subtle visual changes", async ({ page }) => {

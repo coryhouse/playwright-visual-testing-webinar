@@ -59,6 +59,7 @@ test.describe("Applitools Examples", () => {
     //   input.placeholder = "Enter your userna";
     // });
     // await eyes.check("small visual changes test");
+
     //Users can use a layoutRegion(s) or ignoreRegion(s) if these visual diffs are intentional.
     // await eyes.check("small visual changes test after", {
     //   layoutRegions: ["#log-in", "#username"],

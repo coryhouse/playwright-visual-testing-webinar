@@ -54,6 +54,7 @@ test.describe("Playwright Visual Test Examples", () => {
     // STEP 1: Create PW baseline then comment out.
     await page.goto("https://sandbox.applitools.com/bank");
     await expect(page).toHaveScreenshot("small-changes.png");
+
     // STEP 2: Uncomment this and run again after commenting out above steps.
     //  await page.goto("https://sandbox.applitools.com/bank");
     //  await page.evaluate(() => {

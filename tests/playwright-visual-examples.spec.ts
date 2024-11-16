@@ -7,11 +7,11 @@ import { test, expect } from "@playwright/test";
 
 test.describe("Playwright Visual Test Examples", () => {
   test("displacements", async ({ page }) => {
-    //Create PW baseline then comment out.
+    // STEP 1: Create PW baseline
     await page.goto("https://sandbox.applitools.com/bank");
     await expect(page).toHaveScreenshot("displacements.png");
 
-    //Uncomment this and run again after commenting out above steps.
+    // STEP 2: Uncomment and compare Playwright's diff with Eye's diff.
     //  await page.goto(
     //    "https://sandbox.applitools.com/bank?ignoreDisplacements=true"
     //  );
@@ -19,10 +19,21 @@ test.describe("Playwright Visual Test Examples", () => {
   });
 
   test("dynamic data", async ({ page }) => {
-    //Create PW baseline then comment out.
+    // STEP 1: Create PW baseline.
     await page.goto("https://sandbox.applitools.com/bank/dashboard");
-    await expect(page).toHaveScreenshot("dynamic.png");
-    //Uncomment this and run again after commenting out above steps.
+    await expect(page).toHaveScreenshot("dynamic.png", {
+      mask: [page.locator(".dashboardOverview_balanceValue__4_rRQ")],
+    });
+
+    // STEP 2: Dynamic data with a mask
+    // await page.goto(
+    //   "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"
+    // );
+    // await expect(page).toHaveScreenshot("dynamic.png", {
+    //   mask: [page.locator(".dashboardOverview_balanceValue__4_rRQ")],
+    // });
+
+    // STEP 3: Dynamic data with Eyes layout
     //  await page.goto(
     //    "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"
     //  );

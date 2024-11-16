@@ -32,26 +32,22 @@ test.describe("Playwright Visual Test Examples", () => {
     // await expect(page).toHaveScreenshot("dynamic.png", {
     //   mask: [page.locator(".dashboardOverview_balanceValue__4_rRQ")],
     // });
-
-    // STEP 3: Dynamic data with Eyes layout
-    //  await page.goto(
-    //    "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"
-    //  );
-    //  await page.evaluate(() => {
-    //    let elem = document.querySelector(
-    //      ".dashboardNav_logoLabel__iQ5Pd"
-    //    ) as HTMLElement;
-    //    elem.style.backgroundColor = "red";
-    //    elem.style.color = "black";
-    //    let text = document.querySelector(
-    //      ".dashboardOverview_hideMobile__L9uZF > div:nth-child(1)"
-    //    ) as HTMLElement;
-    //    text.innerText = "Total Debt";
-    //  });
-    //  await expect(page).toHaveScreenshot("dynamic.png", {
-    //    threshold: 0.1,
-    //    timeout: 30000,
-    //  });
+    // STEP 3: Many style changes, but same layout.
+    // await page.goto(
+    //   "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"
+    // );
+    // await page.evaluate(() => {
+    //   let elem = document.querySelector(
+    //     ".dashboardNav_logoLabel__iQ5Pd"
+    //   ) as HTMLElement;
+    //   elem.style.backgroundColor = "red";
+    //   elem.style.color = "black";
+    //   let text = document.querySelector(
+    //     ".dashboardOverview_hideMobile__L9uZF > div:nth-child(1)"
+    //   ) as HTMLElement;
+    //   text.innerText = "Total Debt";
+    // });
+    // await expect(page).toHaveScreenshot("dynamic.png");
   });
 
   test("subtle visual changes", async ({ page }) => {

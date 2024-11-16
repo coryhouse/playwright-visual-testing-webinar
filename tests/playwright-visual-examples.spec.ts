@@ -24,7 +24,6 @@ test.describe("Playwright Visual Test Examples", () => {
     await expect(page).toHaveScreenshot("dynamic.png", {
       mask: [page.locator(".dashboardOverview_balanceValue__4_rRQ")],
     });
-
     // STEP 2: Dynamic data with a mask
     // await page.goto(
     //   "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"
@@ -52,22 +51,17 @@ test.describe("Playwright Visual Test Examples", () => {
   });
 
   test("subtle visual changes", async ({ page }) => {
-    //Create PW baseline then comment out.
+    // STEP 1: Create PW baseline then comment out.
     await page.goto("https://sandbox.applitools.com/bank");
     await expect(page).toHaveScreenshot("small-changes.png");
-
-    //Uncomment this and run again after commenting out above steps.
+    // STEP 2: Uncomment this and run again after commenting out above steps.
     //  await page.goto("https://sandbox.applitools.com/bank");
     //  await page.evaluate(() => {
     //    let text = document.querySelector("#log-in") as HTMLElement;
     //    text.innerText = "Sinn in";
-
     //    let input = document.querySelector("#username") as HTMLInputElement;
     //    input.placeholder = "Enter your userna";
     //  });
-    //  await expect(page).toHaveScreenshot("small-changes.png", {
-    //    threshold: 0.1,
-    //    timeout: 30000,
-    //  });
+    //  await expect(page).toHaveScreenshot("small-changes.png");
   });
 });

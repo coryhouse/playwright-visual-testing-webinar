@@ -26,9 +26,22 @@ test.describe("Applitools Examples", () => {
     await page.goto("https://sandbox.applitools.com/bank/dashboard");
     await eyes.check("layout test before");
 
+    // STEP 2: Dynamic data with matchLevel: Layout
     // await page.goto(
     //   "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"
     // );
+    // // Deliberately change the markup to force non-layout diff.
+    // await page.evaluate(() => {
+    //   let elem = document.querySelector(
+    //     ".dashboardNav_logoLabel__iQ5Pd"
+    //   ) as HTMLElement;
+    //   elem.style.backgroundColor = "red";
+    //   elem.style.color = "black";
+    //   let text = document.querySelector(
+    //     ".dashboardOverview_hideMobile__L9uZF > div:nth-child(1)"
+    //   ) as HTMLElement;
+    //   text.innerText = "Total Debt";
+    // });
     // await eyes.check("layout test", { matchLevel: "Layout" });
   });
 
@@ -37,6 +50,7 @@ test.describe("Applitools Examples", () => {
     await page.goto("https://sandbox.applitools.com/bank");
     await eyes.check("small visual changes test");
 
+    // STEP 2: Uncomment this and run again after commenting out above steps.
     // await page.goto("https://sandbox.applitools.com/bank");
     // await page.evaluate(() => {
     //   let text = document.querySelector("#log-in") as HTMLElement;
@@ -45,8 +59,9 @@ test.describe("Applitools Examples", () => {
     //   input.placeholder = "Enter your userna";
     // });
     // await eyes.check("small visual changes test");
-
     //Users can use a layoutRegion(s) or ignoreRegion(s) if these visual diffs are intentional.
-    // await eyes.check('small visual changes test after', {layoutRegions: ['#log-in', '#username']});
+    // await eyes.check("small visual changes test after", {
+    //   layoutRegions: ["#log-in", "#username"],
+    // });
   });
 });

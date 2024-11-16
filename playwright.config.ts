@@ -5,7 +5,7 @@ import { EyesFixture } from "@applitools/eyes-playwright/fixture";
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// require('dotenv').config();
+require("dotenv").config();
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -40,8 +40,8 @@ export default defineConfig<EyesFixture>({
     /* Configuration for Eyes VisualAI */
     eyesConfig: {
       /* The following and other configuration parameters are documented at: <url> */
-      // TODO: Change before the prod demo.
-      serverUrl: "https://eyes.applitools.com/",
+      apiKey: process.env.APPLITOOLS_API_KEY,
+      serverUrl: "https://testeyes.applitools.com/",
       // type: "ufg", // Uncomment this and browsersInfo to use Ultrafast Grid instead of "classic" mode, which is the default, which uses Playwright's browser settings.
       // browsersInfo: [
       //   { width: 1200, height: 900, name: "chrome" },

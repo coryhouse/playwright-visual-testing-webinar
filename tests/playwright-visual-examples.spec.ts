@@ -32,6 +32,7 @@ test.describe("Playwright Visual Test Examples", () => {
     // await expect(page).toHaveScreenshot("dynamic.png", {
     //   mask: [page.locator(".dashboardOverview_balanceValue__4_rRQ")],
     // });
+
     // STEP 3: Many style changes, but same layout.
     // await page.goto(
     //   "https://sandbox.applitools.com/bank/dashboard?layoutAlgo=true"

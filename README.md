@@ -5,7 +5,7 @@
 1. `npx playwright test playwright-visual-examples.spec.ts` to demo Playwright.
 2. `npx playwright test applitools-examples.spec.ts` to demo Eyes.
 
-## Demo site and slides
+## Links
 
 - [Demo website](https://sandbox.applitools.com/bank)
 - [Docs](https://applitools.com/tutorials/playwright/)

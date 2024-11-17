@@ -7,5 +7,5 @@
 
 ## Demo site:
 
-Public: https://sandbox.applitools.com/bank
-Docs: https://applitools.com/tutorials/playwright/
+- Public: https://sandbox.applitools.com/bank
+- Docs: https://applitools.com/tutorials/playwright/

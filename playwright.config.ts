@@ -39,8 +39,7 @@ export default defineConfig<EyesFixture>({
     baseURL: process.env.PLAYWRIGHT_BASE_URL || "http://localhost:3000/",
     /* Configuration for Eyes VisualAI */
     eyesConfig: {
-      /* The following and other configuration parameters are documented at: <url> */
-      apiKey: process.env.APPLITOOLS_API_KEY,
+      /* The following and other configuration parameters are documented at: https://applitools.com/tutorials/playwright/api/overview */
       serverUrl: "https://testeyes.applitools.com/",
       // type: "ufg", // Uncomment this and browsersInfo to use Ultrafast Grid instead of "classic" mode, which is the default, which uses Playwright's browser settings.
       // browsersInfo: [

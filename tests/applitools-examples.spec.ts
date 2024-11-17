@@ -60,9 +60,12 @@ test.describe("Applitools Examples", () => {
     // });
     // await eyes.check("small visual changes test");
 
-    //Users can use a layoutRegion(s) or ignoreRegion(s) if these visual diffs are intentional.
+    // Users can use a layoutRegion(s) or ignoreRegion(s) if these visual diffs are intentional.
     // await eyes.check("small visual changes test after", {
-    //   layoutRegions: ["#log-in", "#username"],
+    //   layoutRegions: [
+    //      page.getByRole('button', { name: 'Sign in' }),
+    //      page.getByPlaceholder('Enter your username')
+    //   ]
     // });
   });
 });

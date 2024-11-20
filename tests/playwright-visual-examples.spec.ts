@@ -6,7 +6,7 @@ import { test, expect } from "@playwright/test";
 // In the below tests. Run it once to create the Playwright baseline images. Then comment out the original steps and uncomment out the other comparison ones.
 
 test.describe("Playwright Visual Test Examples", () => {
-  test("displacements", async ({ page }) => {
+  test("displacements / layout shift", async ({ page }) => {
     // STEP 1: Create PW baseline
     await page.goto("https://sandbox.applitools.com/bank");
     await expect(page).toHaveScreenshot("displacements.png");

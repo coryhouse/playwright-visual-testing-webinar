@@ -7,7 +7,7 @@ test.describe("Applitools Examples", () => {
   //Compare with the baseline (in before spec), add a displacement.
   //With ignoreDisplacements false, the visual test will fail for all elements.
   //With ignoreDisplacements added, the visual test will only fail for the new element.
-  test("displacements", async ({ page, eyes }) => {
+  test("displacements / layout shift", async ({ page, eyes }) => {
     await page.goto("https://sandbox.applitools.com/bank");
     await eyes.check("displacement test");
 
